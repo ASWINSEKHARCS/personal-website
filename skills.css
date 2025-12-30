@@ -1,0 +1,277 @@
+/* ===================================
+   Cybernetic Skill Hub (Redesign)
+   =================================== */
+
+.cyber-hub {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    background: #050508;
+}
+
+.hub-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.scan-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+    opacity: 0.1;
+    animation: scan 4s linear infinite;
+    z-index: 2;
+}
+
+@keyframes scan {
+    0% {
+        top: -10%;
+    }
+
+    100% {
+        top: 110%;
+    }
+}
+
+.glow-sphere {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(0, 243, 255, 0.05) 0%, transparent 70%);
+}
+
+.neural-matrix {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Cluster Styling */
+.skill-cluster {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 2.5rem;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    background: rgba(10, 10, 15, 0.4);
+    backdrop-filter: blur(20px);
+}
+
+.skill-cluster:hover {
+    border-color: rgba(0, 243, 255, 0.2);
+    transform: translateY(-5px);
+    background: rgba(15, 15, 25, 0.6);
+}
+
+.cluster-id {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--accent-cyan);
+    opacity: 0.4;
+    letter-spacing: 2px;
+}
+
+.skill-cluster.focus {
+    grid-column: span 8;
+}
+
+.skill-cluster:not(.focus) {
+    grid-column: span 4;
+}
+
+/* Cluster Header */
+.cluster-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.cluster-icon {
+    width: 60px;
+    height: 60px;
+    color: var(--accent-cyan);
+    background: rgba(0, 243, 255, 0.05);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.cluster-title h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.tagline {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Node Network (Grid within cluster) */
+.node-network {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.skill-node.premium {
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    position: relative;
+}
+
+.skill-node.premium::before {
+    content: attr(data-coord);
+    position: absolute;
+    top: 0.5rem;
+    left: 0.8rem;
+    font-size: 0.55rem;
+    font-family: var(--font-mono);
+    color: var(--accent-cyan);
+}
+
+.node-label {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.node-bar {
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.node-bar .fill {
+    height: 100%;
+    background: var(--accent-cyan);
+    box-shadow: 0 0 10px var(--accent-cyan);
+    transition: width 1.5s ease;
+}
+
+/* Cluster 2: List View */
+.node-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.item-name {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.skill-item::after {
+    content: attr(data-type);
+    font-size: 0.6rem;
+    font-family: var(--font-mono);
+    color: var(--accent-purple);
+    border: 1px solid rgba(189, 0, 255, 0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Cluster 3: Hardware Grid */
+.hardware-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.hw-stat {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hw-val {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+    margin-bottom: 0.4rem;
+}
+
+.hw-lab {
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+/* Cluster 4: Soft Cloud */
+.soft-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.cloud-tag {
+    padding: 0.6rem 1rem;
+    background: rgba(189, 0, 255, 0.05);
+    border: 1px solid rgba(189, 0, 255, 0.2);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    color: var(--accent-purple);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+
+    .skill-cluster.focus,
+    .skill-cluster:not(.focus) {
+        grid-column: span 12;
+    }
+
+    .node-network {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .node-network {
+        grid-template-columns: 1fr;
+    }
+
+    .cluster-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hardware-stats {
+        grid-template-columns: 1fr;
+    }
+}

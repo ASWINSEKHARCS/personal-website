@@ -1,0 +1,537 @@
+/* ===================================
+   Honors & Awards Section
+   =================================== */
+
+#honors {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.02), rgba(255, 165, 0, 0.02));
+}
+
+#honors h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===================================
+   Spotlight Award (Featured)
+   =================================== */
+
+.spotlight-award {
+    padding: 3rem;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.spotlight-award::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #ffd700, #ff8c00, #ffd700);
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0.3;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.spotlight-award:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(255, 215, 0, 0.25);
+}
+
+.spotlight-badge {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(255, 165, 0, 0.15));
+    border: 2px solid rgba(255, 215, 0, 0.5);
+    border-radius: 50px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #ffd700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.spotlight-badge svg {
+    width: 18px;
+    height: 18px;
+    stroke: #ffd700;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+.spotlight-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.spotlight-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.1));
+    border: 2px solid rgba(255, 215, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.4s ease;
+}
+
+.spotlight-award:hover .spotlight-icon {
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 8px 24px rgba(255, 215, 0, 0.4);
+}
+
+.spotlight-icon svg {
+    width: 50px;
+    height: 50px;
+    stroke: #ffd700;
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6));
+}
+
+.spotlight-details {
+    flex: 1;
+}
+
+.spotlight-details h3 {
+    font-size: 1.8rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.spotlight-institutions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.institution-badge {
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.institution-connector {
+    color: #ffd700;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.spotlight-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #a0a0b0;
+    font-family: 'Inter', sans-serif;
+}
+
+.spotlight-location svg {
+    width: 18px;
+    height: 18px;
+    stroke: #ffd700;
+}
+
+.spotlight-timeline {
+    margin-left: auto;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 165, 0, 0.1));
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffd700;
+    white-space: nowrap;
+}
+
+/* ===================================
+   Awards Grid
+   =================================== */
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.award-card {
+    padding: 2rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.award-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.award-card:hover::before {
+    opacity: 1;
+}
+
+.award-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Category-based styling */
+.award-card.academic::before {
+    background: linear-gradient(180deg, #ffd700, #ff8c00);
+}
+
+.award-card.academic:hover {
+    border-color: rgba(255, 215, 0, 0.4);
+    box-shadow: 0 16px 40px rgba(255, 215, 0, 0.15);
+}
+
+.award-card.competition::before {
+    background: linear-gradient(180deg, #00f3ff, #0073CF);
+}
+
+.award-card.competition:hover {
+    border-color: rgba(0, 243, 255, 0.4);
+    box-shadow: 0 16px 40px rgba(0, 243, 255, 0.15);
+}
+
+.award-card.government::before {
+    background: linear-gradient(180deg, #bd00ff, #8a00ff);
+}
+
+.award-card.government:hover {
+    border-color: rgba(189, 0, 255, 0.4);
+    box-shadow: 0 16px 40px rgba(189, 0, 255, 0.15);
+}
+
+.award-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    transition: all 0.4s ease;
+}
+
+.award-card.academic .award-icon {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.1));
+    border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+.award-card.academic .award-icon svg {
+    stroke: #ffd700;
+}
+
+.award-card.competition .award-icon {
+    background: linear-gradient(135deg, rgba(0, 243, 255, 0.2), rgba(0, 115, 207, 0.1));
+    border: 1px solid rgba(0, 243, 255, 0.4);
+}
+
+.award-card.competition .award-icon svg {
+    stroke: #00f3ff;
+}
+
+.award-card.government .award-icon {
+    background: linear-gradient(135deg, rgba(189, 0, 255, 0.2), rgba(138, 0, 255, 0.1));
+    border: 1px solid rgba(189, 0, 255, 0.4);
+}
+
+.award-card.government .award-icon svg {
+    stroke: #bd00ff;
+}
+
+.award-card:hover .award-icon {
+    transform: rotate(-10deg) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.award-icon svg {
+    width: 30px;
+    height: 30px;
+    stroke-width: 2;
+}
+
+.award-category {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.award-card.academic .award-category {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.05));
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    color: #ffd700;
+}
+
+.award-card.competition .award-category {
+    background: linear-gradient(135deg, rgba(0, 243, 255, 0.2), rgba(0, 243, 255, 0.05));
+    border: 1px solid rgba(0, 243, 255, 0.4);
+    color: #00f3ff;
+}
+
+.award-card.government .award-category {
+    background: linear-gradient(135deg, rgba(189, 0, 255, 0.2), rgba(189, 0, 255, 0.05));
+    border: 1px solid rgba(189, 0, 255, 0.4);
+    color: #bd00ff;
+}
+
+.award-card h4 {
+    font-size: 1.3rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+}
+
+.award-event {
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.award-institution {
+    font-size: 0.8rem;
+    color: #a0a0b0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.award-achievement {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+
+.award-achievement svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.award-card.academic .award-achievement svg {
+    fill: #ffd700;
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+}
+
+.award-card.competition .award-achievement svg {
+    fill: #00f3ff;
+    filter: drop-shadow(0 0 8px rgba(0, 243, 255, 0.6));
+}
+
+.award-card.government .award-achievement svg {
+    fill: #bd00ff;
+    filter: drop-shadow(0 0 8px rgba(189, 0, 255, 0.6));
+}
+
+.award-achievement span {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.achievement-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.stat-number {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+
+.stat-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    color: #a0a0b0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.achievement-divider {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    color: #a0a0b0;
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+.award-details {
+    padding: 0.75rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border-left: 3px solid rgba(255, 215, 0, 0.4);
+}
+
+.award-details p {
+    font-size: 0.8rem;
+    color: #a0a0b0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.award-date {
+    margin-top: auto;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #a0a0b0;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.award-card:hover .award-date {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .spotlight-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .spotlight-badge {
+        position: static;
+        align-self: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .spotlight-timeline {
+        margin-left: 0;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .spotlight-award {
+        padding: 2rem;
+    }
+
+    .spotlight-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .spotlight-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .spotlight-details h3 {
+        font-size: 1.4rem;
+    }
+
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .award-card {
+        padding: 1.5rem;
+    }
+}

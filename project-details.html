@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Aswin Sekhar C S</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+    <style>
+        /* Inline critical styles for layout, specific themes handled in main CSS */
+        body {
+            background-color: #050510;
+            color: #ffffff;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .loading-screen {
+            position: fixed;
+            inset: 0;
+            background: #050510;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loading-screen" id="loader">
+        <div class="status-indicator" style="width: 20px; height: 20px;"></div>
+    </div>
+
+    <!-- Background Canvas -->
+    <canvas id="detail-canvas"></canvas>
+
+    <main class="project-page">
+
+        <!-- Navigation Back -->
+        <nav class="project-nav">
+            <a href="index.html#research" class="back-link">
+                <span class="arrow">←</span> Back to Research
+            </a>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="project-hero" id="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <h1 id="p-title" class="reveal">Project Title</h1>
+                <p id="p-subtitle" class="reveal delay-1">Project Subtitle</p>
+
+                <div class="project-meta glass reveal delay-2">
+                    <div class="meta-item">
+                        <span class="meta-label">Principal Investigator</span>
+                        <span id="p-pi" class="meta-value">Dr. Name</span>
+                    </div>
+                    <div class="meta-division"></div>
+                    <div class="meta-item">
+                        <span class="meta-label">Institute</span>
+                        <span id="p-institute" class="meta-value">Institute Name</span>
+                    </div>
+                    <div class="meta-division"></div>
+                    <div class="meta-item">
+                        <span class="meta-label">Duration</span>
+                        <span id="p-duration" class="meta-value">Dates</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <section class="project-body container">
+            <div class="content-grid">
+
+                <!-- Left: Details -->
+                <div class="content-main reveal delay-3">
+                    <div class="section-block">
+                        <h2>Overview</h2>
+                        <p id="p-description" class="lead-text">
+                            Project description placeholder.
+                        </p>
+                    </div>
+
+                    <div class="section-block">
+                        <h2>Key Contributions</h2>
+                        <ul id="p-highlights" class="highlights-list">
+                            <!-- Populated via JS -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right: Tech & Image -->
+                <div class="content-sidebar reveal delay-3">
+
+                    <div class="tech-card glass">
+                        <h3>Technologies & Tools</h3>
+                        <div id="p-tech" class="tech-tags">
+                            <!-- Populated via JS -->
+                        </div>
+                    </div>
+
+                    <div class="project-visual">
+                        <div class="image-frame">
+                            <img id="p-image" src="" alt="Project Visual">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Aswin Sekhar C S. Research Portfolio.</p>
+        </footer>
+
+    </main>
+
+    <script type="module">
+        import projectData from './project-data.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const projectId = params.get('id');
+            const data = projectData[projectId];
+
+            if (!data) {
+                window.location.href = 'index.html'; // Redirect if invalid
+                return;
+            }
+
+            // Populate Data
+            document.title = `${data.title} | Research`;
+            document.getElementById('p-title').textContent = data.title;
+            document.getElementById('p-subtitle').textContent = data.subtitle;
+            document.getElementById('p-pi').textContent = data.pi;
+            document.getElementById('p-institute').textContent = data.institute;
+            document.getElementById('p-duration').textContent = data.duration;
+            document.getElementById('p-description').textContent = data.description;
+            document.getElementById('p-image').src = data.image;
+
+            // Hero Background
+            const heroSection = document.getElementById('hero-section');
+            heroSection.style.backgroundImage = `url('${data.image}')`;
+
+            // Highlights
+            const highlightsList = document.getElementById('p-highlights');
+            data.highlights.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = item;
+                highlightsList.appendChild(li);
+            });
+
+            // Tech Stack
+            const techContainer = document.getElementById('p-tech');
+            data.techStack.forEach(tech => {
+                const span = document.createElement('span');
+                span.className = 'tech-badge';
+                span.textContent = tech;
+                techContainer.appendChild(span);
+            });
+
+            // Remove loader
+            setTimeout(() => {
+                document.getElementById('loader').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('loader').style.display = 'none';
+                }, 500);
+            }, 500);
+
+            // Add reveal class active
+            setTimeout(() => {
+                document.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>

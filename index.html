@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswin Sekhar C S | BCI & Computational Neuroscience</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="leadership-teaching.css">
+    <link rel="stylesheet" href="honors-awards.css">
+    <link rel="stylesheet" href="education.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="polish.css">
+    <link rel="stylesheet" href="contact-premium.css">
+
+    <!-- Three.js Import Map for clean module loading -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- 3D Background Container -->
+    <canvas id="brain-canvas"></canvas>
+
+    <!-- Overlay UI -->
+    <main id="app">
+
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">ASWIN SEKHAR C S</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-container container">
+                <div class="hero-content reveal">
+                    <p class="subtitle reveal delay-1"> Doctoral Student & Research Officer </p>
+                    <h1 class="reveal delay-2">Decoding <br>the <span class="gradient-text">Mind</span></h1>
+                    <p class="bio-snippet delay-3">Exploring the frontiers of Brain-Computer Interface, Neuroscience, AI
+                        and
+                        Machine Learning to
+                        bridge the gap between biological intelligence and artificial systems.</p>
+                    <div class="cta-group delay-3">
+                        <a href="#research" class="btn primary">Explore Research</a>
+                        <a href="#contact" class="btn secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-wrapper">
+                        <div class="profile-glow"></div>
+                        <div class="profile-frame">
+                            <img src="uploaded_image_1766043149155.jpg" alt="Aswin Sekhar C S" id="profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section: Neural Interface Dashboard -->
+        <section id="about">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Left: Identity Node -->
+                    <div class="dashboard-card identity-node glass">
+                        <div class="card-tag">Current Professional Status</div>
+                        <div class="node-content">
+                            <div class="identity-header">
+                                <div class="avatar-mini">
+                                    <img src="uploaded_image_1766043149155.jpg" alt="Aswin Sekhar">
+                                </div>
+                                <div class="node-text">
+                                    <h3>Aswin Sekhar C S</h3>
+                                    <div class="vacation-status">
+                                        <span class="status-badge available">
+                                            <span class="status-indicator"></span>
+                                            Available
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="designations-container">
+                                <div class="designation-item">
+                                    <div class="designation-badge doctoral">
+                                        <svg class="designation-icon" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                        </svg>
+                                        <span>Doctoral Student</span>
+                                    </div>
+                                    <div class="designation-details">
+                                        <p class="designation-org">Singapore Institute of Technology</p>
+                                        <span class="designation-years">2024 - Present</span>
+                                    </div>
+                                    <div class="supervisors-section">
+                                        <div class="supervisor-item">
+                                            <span class="supervisor-label">Supervisor:</span>
+                                            <a href="https://scholar.google.com.sg/citations?user=yhYd0_4AAAAJ&hl=en"
+                                                target="_blank" rel="noopener noreferrer" class="supervisor-name">Prof
+                                                Vinod A Prasad</a>
+                                        </div>
+                                        <div class="supervisor-item">
+                                            <span class="supervisor-label">Co-Supervisors:</span>
+                                            <span class="supervisor-name"><a
+                                                    href="https://www.kkh.com.sg/doctor/paediatric-neurology/teo-jia-hui"
+                                                    target="_blank" rel="noopener noreferrer" class="supervisor-link">Dr
+                                                    Teo Jia Hui</a> & <a
+                                                    href="https://www.kkh.com.sg/doctor/paediatric-neurology/chan-wei-shih-derrick"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="supervisor-link">Clin
+                                                    Assoc Prof Derrick Chan Wei Shih</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="designation-item">
+                                    <div class="designation-badge research">
+                                        <svg class="designation-icon" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="11" cy="11" r="8" />
+                                            <path d="m21 21-4.35-4.35" />
+                                            <path d="M11 8a3 3 0 0 0-3 3" />
+                                        </svg>
+                                        <span>Research Officer</span>
+                                    </div>
+                                    <div class="designation-details">
+                                        <p class="designation-org">KK Women's and Children's Hospital (KKH) - Department
+                                            of Paediatric Neurology</p>
+                                        <span class="designation-years">2024 - Present</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Center: Metrics / Stats -->
+                    <div class="dashboard-card metrics-node glass">
+                        <div class="card-tag">Scientific Contributions</div>
+                        <div class="stats-visual-grid">
+                            <div class="data-point">
+                                <div class="stat-value">5+</div>
+                                <div class="stat-label">Years Research</div>
+                                <svg class="oscilloscope" viewBox="0 0 100 20">
+                                    <path
+                                        d="M0 10 Q 5 8, 10 10 T 20 10 Q 25 12, 30 10 T 40 10 Q 45 7, 50 10 T 60 10 Q 65 13, 70 10 T 80 10 Q 85 9, 90 10 T 100 10"
+                                        stroke="var(--accent-cyan)" fill="transparent" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div class="data-point">
+                                <div class="stat-value">5</div>
+                                <div class="stat-label">Publications</div>
+                                <svg class="oscilloscope" viewBox="0 0 100 20">
+                                    <path
+                                        d="M0 10 L 8 10 L 10 5 L 12 15 L 14 10 L 22 10 L 24 6 L 26 14 L 28 10 L 36 10 L 38 7 L 40 13 L 42 10 L 50 10 L 52 8 L 54 12 L 56 10 L 64 10 L 66 6 L 68 14 L 70 10 L 78 10 L 80 7 L 82 13 L 84 10 L 92 10 L 94 8 L 96 12 L 98 10 L 100 10"
+                                        stroke="var(--accent-purple)" fill="transparent" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div class="data-point">
+                                <div class="stat-value">1</div>
+                                <div class="stat-label">Patent</div>
+                                <svg class="oscilloscope" viewBox="0 0 100 20">
+                                    <path
+                                        d="M0 10 L 15 10 L 17 2 L 19 18 L 21 10 L 35 10 L 37 3 L 39 17 L 41 10 L 55 10 L 57 4 L 59 16 L 61 10 L 75 10 L 77 3 L 79 17 L 81 10 L 100 10"
+                                        stroke="#ffd700" fill="transparent" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="data-point">
+                                <div class="stat-value">2</div>
+                                <div class="stat-label">Software Developed</div>
+                                <svg class="oscilloscope" viewBox="0 0 100 20">
+                                    <path
+                                        d="M0 10 Q 6 6, 12 10 Q 18 14, 24 10 Q 30 6, 36 10 Q 42 14, 48 10 Q 54 6, 60 10 Q 66 14, 72 10 Q 78 6, 84 10 Q 90 14, 96 10 L 100 10"
+                                        stroke="#00ff88" fill="transparent" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div class="data-point">
+                                <div class="stat-value">3</div>
+                                <div class="stat-label">Open-Source Contributions</div>
+                                <svg class="oscilloscope" viewBox="0 0 100 20">
+                                    <path
+                                        d="M0 10 Q 4 12, 8 10 Q 12 8, 16 10 Q 20 12, 24 10 Q 28 8, 32 10 Q 36 12, 40 10 Q 44 8, 48 10 Q 52 12, 56 10 Q 60 8, 64 10 Q 68 12, 72 10 Q 76 8, 80 10 Q 84 12, 88 10 Q 92 8, 96 10 L 100 10"
+                                        stroke="var(--accent-cyan)" fill="transparent" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div class="data-point">
+                                <div class="stat-value">5</div>
+                                <div class="stat-label">Technical Presentations</div>
+                                <svg class="oscilloscope" viewBox="0 0 100 20">
+                                    <path
+                                        d="M0 10 L 6 10 L 7 8 L 8 12 L 9 10 L 15 10 L 16 7 L 17 13 L 18 10 L 24 10 L 25 9 L 26 11 L 27 10 L 33 10 L 34 8 L 35 12 L 36 10 L 42 10 L 43 7 L 44 13 L 45 10 L 51 10 L 52 9 L 53 11 L 54 10 L 60 10 L 61 8 L 62 12 L 63 10 L 69 10 L 70 7 L 71 13 L 72 10 L 78 10 L 79 9 L 80 11 L 81 10 L 87 10 L 88 8 L 89 12 L 90 10 L 96 10 L 97 9 L 98 11 L 99 10 L 100 10"
+                                        stroke="var(--accent-purple)" fill="transparent" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div class="data-point">
+                                <div class="stat-value">7+</div>
+                                <div class="stat-label">Projects Completed</div>
+                                <svg class="oscilloscope" viewBox="0 0 100 20">
+                                    <path
+                                        d="M0 10 Q 5 5, 10 10 Q 15 15, 20 10 Q 25 5, 30 10 Q 35 15, 40 10 Q 45 5, 50 10 Q 55 15, 60 10 Q 65 5, 70 10 Q 75 15, 80 10 Q 85 5, 90 10 Q 95 15, 100 10"
+                                        stroke="#00ff88" fill="transparent" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div class="data-point">
+                                <div class="stat-value">6+</div>
+                                <div class="stat-label">Awards & Honors</div>
+                                <svg class="oscilloscope" viewBox="0 0 100 20">
+                                    <path
+                                        d="M0 10 L 10 10 L 12 4 L 14 16 L 16 10 L 26 10 L 28 5 L 30 15 L 32 10 L 42 10 L 44 4 L 46 16 L 48 10 L 58 10 L 60 5 L 62 15 L 64 10 L 74 10 L 76 4 L 78 16 L 80 10 L 90 10 L 92 5 L 94 15 L 96 10 L 100 10"
+                                        stroke="#ffd700" fill="transparent" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Labs & Research Experience -->
+                    <div class="dashboard-card vision-node glass">
+                        <div class="card-tag">Research Experience</div>
+                        <div class="research-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker current"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-icon-wrapper">
+                                        <svg class="lab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2">
+                                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                            <circle cx="12" cy="12" r="3" />
+                                        </svg>
+                                    </div>
+                                    <div class="lab-details">
+                                        <div class="lab-header">
+                                            <strong>Digital Health Innovation Lab</strong>
+                                            <span class="timeline-date">2024 - Present</span>
+                                        </div>
+                                        <p class="lab-pi">Prof. Vinod A Prasad</p>
+                                        <p class="lab-institution">SIT, Singapore</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-icon-wrapper">
+                                        <svg class="lab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                                        </svg>
+                                    </div>
+                                    <div class="lab-details">
+                                        <div class="lab-header">
+                                            <strong>Biomedical Signal Processing Lab</strong>
+                                            <span class="timeline-date">Jan - Mar 2024</span>
+                                        </div>
+                                        <p class="lab-pi">Dr. Subha DP</p>
+                                        <p class="lab-institution">NIT Calicut, Kerala</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-icon-wrapper">
+                                        <svg class="lab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2">
+                                            <circle cx="12" cy="12" r="3" />
+                                            <path
+                                                d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.4 4.4l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.4-4.4l4.2-4.2" />
+                                        </svg>
+                                    </div>
+                                    <div class="lab-details">
+                                        <div class="lab-header">
+                                            <strong>Computational Neuroscience Lab</strong>
+                                            <span class="timeline-date">May - Aug 2023</span>
+                                        </div>
+                                        <p class="lab-pi">Dr. Chinakkaruppan Adaikkan</p>
+                                        <p class="lab-institution">Centre for Brain Research,IISc</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-icon-wrapper">
+                                        <svg class="lab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                                        </svg>
+                                    </div>
+                                    <div class="lab-details">
+                                        <div class="lab-header">
+                                            <strong>Biomedical Signal Processing Lab</strong>
+                                            <span class="timeline-date">Jan - Apr 2023</span>
+                                        </div>
+                                        <p class="lab-pi">Dr. Subha DP</p>
+                                        <p class="lab-institution">NIT Calicut, Kerala</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-icon-wrapper">
+                                        <svg class="lab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2">
+                                            <rect x="2" y="6" width="20" height="12" rx="2" />
+                                            <path d="M12 12h.01M17 12h.01M7 12h.01" />
+                                            <path d="M12 6V2m0 20v-4" />
+                                        </svg>
+                                    </div>
+                                    <div class="lab-details">
+                                        <div class="lab-header">
+                                            <strong>Mechatronics Lab</strong>
+                                            <span class="timeline-date">Dec 2022 - Apr 2023</span>
+                                        </div>
+                                        <p class="lab-pi">Dr. Sudheer AP</p>
+                                        <p class="lab-institution">NIT Calicut, Kerala</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-icon-wrapper">
+                                        <svg class="lab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2">
+                                            <path d="M6 9l6 6 6-6" />
+                                            <circle cx="12" cy="12" r="1" />
+                                            <path
+                                                d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="lab-details">
+                                        <div class="lab-header">
+                                            <strong>Electronics & Communication Lab</strong>
+                                            <span class="timeline-date">Sep - Dec 2022</span>
+                                        </div>
+                                        <p class="lab-pi">Dr. Sudhish N George</p>
+                                        <p class="lab-institution">NIT Calicut, Kerala</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-icon-wrapper">
+                                        <svg class="lab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2">
+                                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                                            <rect x="9" y="9" width="6" height="6" />
+                                            <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3" />
+                                        </svg>
+                                    </div>
+                                    <div class="lab-details">
+                                        <div class="lab-header">
+                                            <strong>Embedded Systems Lab</strong>
+                                            <span class="timeline-date">May - Aug 2022</span>
+                                        </div>
+                                        <p class="lab-pi">Dr. Raghu C V</p>
+                                        <p class="lab-institution">NIT Calicut, Kerala</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Dashboard -->
+        <section id="education">
+            <div class="container reveal">
+                <h2 class="section-title">Academic Journey</h2>
+                <div class="education-dashboard">
+                    <!-- Featured: PhD -->
+                    <div class="education-node featured phd glass">
+                        <div class="node-glow"></div>
+                        <div class="node-badge">Current Milestone</div>
+                        <div class="node-main">
+                            <div class="institution-logo">
+                                <svg viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-dasharray="10 5" />
+                                    <path d="M30 50 L50 20 L70 50 L50 80 Z" fill="currentColor" opacity="0.2" />
+                                    <path d="M50 20 L50 80 M30 50 L70 50" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="node-info">
+                                <div class="node-type">Direct PhD</div>
+                                <h3>Singapore Institute of Technology (SIT)</h3>
+                                <p class="specialization">Brain-Computer Interface Domain</p>
+                                <div class="supervisor-tag">
+                                    <span class="label">Primary Investigator:</span>
+                                    <span class="value">ProfVinod A Prasad</span>
+                                </div>
+                            </div>
+                            <div class="node-meta">
+                                <div class="meta-tag location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    Singapore
+                                </div>
+                                <div class="meta-tag date">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg>
+                                    2024 - Present
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-grid">
+                        <!-- Bachelor -->
+                        <div class="education-node bachelor glass">
+                            <div class="node-type">B.Tech Graduation</div>
+                            <h4>National Institute of Technology Calicut</h4>
+                            <p class="degree">Electronics & Communication Engineering</p>
+                            <div class="achievement-pill">First Class With Distinction</div>
+                            <div class="node-timeline">2020 — 2024</div>
+                        </div>
+
+                        <!-- Secondary -->
+                        <div class="education-node secondary glass">
+                            <div class="node-type">Higher Secondary</div>
+                            <h4>St Johns Model HSS</h4>
+                            <div class="stat-container">
+                                <div class="stat-circle">
+                                    <svg viewBox="0 0 36 36" class="circular-chart">
+                                        <path class="circle-bg"
+                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path class="circle" stroke-dasharray="98, 100"
+                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <text x="18" y="20.35" class="percentage">98.6</text>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-label">Percentage</span>
+                                    <span class="stat-year">2018 - 2020</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- School -->
+                        <div class="education-node school glass">
+                            <div class="node-type">Secondary School</div>
+                            <h4>Lourdes Mount Public School</h4>
+                            <p class="board">CBSE • 10th Standard</p>
+                            <div class="stat-row">
+                                <div class="stat-item">
+                                    <span class="val">95%</span>
+                                    <span class="lab">Result</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="val">2018</span>
+                                    <span class="lab">Passing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cybernetic Skill Hub -->
+        <section id="skills" class="cyber-hub">
+            <div class="container reveal">
+                <div class="hub-background">
+                    <div class="glow-sphere"></div>
+                    <div class="scan-line"></div>
+                </div>
+                <h2 class="section-title">Skills</h2>
+
+                <div class="neural-matrix">
+                    <!-- Cluster 1: Neural Computing -->
+                    <div class="skill-cluster focus glass">
+                        <div class="cluster-id">NODE::NEURAL_COMPUTING</div>
+                        <div class="cluster-content">
+                            <div class="cluster-header">
+                                <div class="cluster-icon">
+                                    <svg viewBox="0 0 100 100">
+                                        <rect x="25" y="25" width="50" height="50" rx="4" fill="none"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M25 50 H75 M50 25 V75" stroke="currentColor" stroke-width="1"
+                                            stroke-dasharray="4 2" />
+                                        <circle cx="50" cy="50" r="15" fill="currentColor" opacity="0.1" />
+                                    </svg>
+                                </div>
+                                <div class="cluster-title">
+                                    <h3>Programming</h3>
+                                    <p class="tagline">Neural Signal Synthesis & Machine Intelligence</p>
+                                </div>
+                            </div>
+
+                            <div class="node-network">
+                                <div class="skill-node premium" data-coord="C-01">
+                                    <div class="node-meta">SIGNAL</div>
+                                    <span class="node-label">MATLAB</span>
+                                    <div class="node-bar">
+                                        <div class="fill" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-node premium" data-coord="C-02">
+                                    <div class="node-meta">LOGIC</div>
+                                    <span class="node-label">Python</span>
+                                    <div class="node-bar">
+                                        <div class="fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-node premium" data-coord="A-01">
+                                    <div class="node-meta">ANN</div>
+                                    <span class="node-label">Deep Learning</span>
+                                    <div class="node-bar">
+                                        <div class="fill" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-node premium" data-coord="A-02">
+                                    <div class="node-meta">STAT</div>
+                                    <span class="node-label">Machine Learning</span>
+                                    <div class="node-bar">
+                                        <div class="fill" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-node premium" data-coord="V-01">
+                                    <div class="node-meta">VIS</div>
+                                    <span class="node-label">OpenCV</span>
+                                </div>
+                                <div class="skill-node premium" data-coord="L-01">
+                                    <div class="node-meta">SYS</div>
+                                    <span class="node-label">C / C++</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cluster 2: Design Systems -->
+                    <div class="skill-cluster glass">
+                        <div class="cluster-id">NODE::SYSTEM_DESIGN</div>
+                        <div class="cluster-content">
+                            <div class="cluster-header">
+                                <div class="cluster-icon">
+                                    <svg viewBox="0 0 100 100">
+                                        <path d="M50 20 L20 80 L80 80 Z" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" />
+                                        <circle cx="50" cy="50" r="10" stroke="currentColor" stroke-width="1" />
+                                    </svg>
+                                </div>
+                                <div class="cluster-title">
+                                    <h3>Architectural Design</h3>
+                                    <p class="tagline">CAD & Multi-Physics Simulation</p>
+                                </div>
+                            </div>
+                            <div class="node-list">
+                                <div class="skill-item" data-type="3D-CAD">
+                                    <span class="item-name">SOLIDWORKS / Fusion 360</span>
+                                </div>
+                                <div class="skill-item" data-type="EDA-SIM">
+                                    <span class="item-name">LTspice / Multisim / Proteus</span>
+                                </div>
+                                <div class="skill-item" data-type="NEURO-ANALYSIS">
+                                    <span class="item-name">SpikeSort 3D / Neuraview</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cluster 3: Engineering Hardware -->
+                    <div class="skill-cluster glass">
+                        <div class="cluster-id">NODE::HARDWARE_FAB</div>
+                        <div class="cluster-content">
+                            <div class="cluster-header">
+                                <div class="cluster-icon">
+                                    <svg viewBox="0 0 100 100">
+                                        <rect x="30" y="30" width="40" height="40" stroke="currentColor"
+                                            stroke-width="1.5" fill="none" />
+                                        <path d="M20 50 H30 M70 50 H80 M50 20 V30 M50 70 V80" stroke="currentColor"
+                                            stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <div class="cluster-title">
+                                    <h3>Hardware Engineering</h3>
+                                    <p class="tagline">Electronic Fab & Prototyping</p>
+                                </div>
+                            </div>
+                            <div class="hardware-stats">
+                                <div class="hw-stat">
+                                    <div class="hw-val">PCB</div>
+                                    <div class="hw-lab">Design</div>
+                                </div>
+                                <div class="hw-stat">
+                                    <div class="hw-val">MOD</div>
+                                    <div class="hw-lab">3D Modeling</div>
+                                </div>
+                                <div class="hw-stat">
+                                    <div class="hw-val">FAB</div>
+                                    <div class="hw-lab">Arc Welding</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cluster 4: Behavioral Synthesis -->
+                    <div class="skill-cluster glass soft">
+                        <div class="cluster-id">NODE::SOFT_SYNTHESIS</div>
+                        <div class="cluster-content">
+                            <div class="cluster-header">
+                                <div class="cluster-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path
+                                            d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
+                                        <path d="M12 6v6l4 2" />
+                                    </svg>
+                                </div>
+                                <div class="cluster-title">
+                                    <h3>Soft Skills</h3>
+                                    <p class="tagline">Leadership & Academic Outreach</p>
+                                </div>
+                            </div>
+                            <div class="soft-cloud">
+                                <span class="cloud-tag">Research Strategy</span>
+                                <span class="cloud-tag">Technical Lecturing</span>
+                                <span class="cloud-tag">Critical Synthesis</span>
+                                <span class="cloud-tag">Project Coordination</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Publications -->
+        <section id="publications" class="section-block">
+            <div class="container">
+                <h2 class="section-title reveal">Research Publications</h2>
+                <div class="publications-grid" id="pub-grid">
+                    <!-- Dynamically Populated -->
+                </div>
+
+                <div class="scholar-cta reveal delay-3">
+                    <a href="https://scholar.google.com/citations?user=4EihBncAAAAJ&hl=en" target="_blank"
+                        class="scholar-btn primary-btn">
+                        View Complete List on Google Scholar <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Areas -->
+        <section id="research">
+            <div class="container reveal">
+                <h2>Research Areas</h2>
+                <div class="research-gallery">
+                    <!-- 1. Ischemic Stroke -->
+                    <div class="research-card">
+                        <div class="card-image">
+                            <img src="eeg.png" alt="Ischemic Stroke">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Ischemic Stroke Classification</h3>
+                                <p class="card-subtitle">EMG Signal Analysis & Closed Loop System</p>
+                            </div>
+                            <div class="card-details">
+                                <p class="card-meta-line">Dr. Sudheer A P & Shahid (Ph.D.) • NIT Calicut • 2024</p>
+                                <p>Aims to utilize EMG signals, for the detection and classification of Ischemic stroke
+                                    creating a closed-loop feedback system.</p>
+                                <a href="project-details.html?id=ischemic-stroke" class="project-link">View Project
+                                    <span class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Schizophrenia & Depression -->
+                    <div class="research-card">
+                        <div class="card-image">
+                            <img src="depression.png" alt="Schizophrenia & Depression AI">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Schizophrenia & Depression AI</h3>
+                                <p class="card-subtitle">BTech Final Year Project</p>
+                            </div>
+                            <div class="card-details">
+                                <p class="card-meta-line">Dr. Subha DP • NIT Calicut • 2024</p>
+                                <p>Aims to utilize non-invasive methods, including EEG signals, for the detection and
+                                    classification of Schizophrenia and Major Depressive Disorder.</p>
+                                <a href="project-details.html?id=schizophrenia-depression" class="project-link">View
+                                    Project <span class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Alzheimer's -->
+                    <div class="research-card">
+                        <div class="card-image">
+                            <img src="alzheimers.png" alt="Alzheimer's Brain Dynamics">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Alzheimer's Brain Dynamics</h3>
+                                <p class="card-subtitle">Complex Network Analysis</p>
+                            </div>
+                            <div class="card-details">
+                                <p class="card-meta-line">Dr. Subha DP • NIT Calicut & SERB • 2024</p>
+                                <p>Investigations on the alteration in brain dynamics during progression of Alzheimer
+                                    Disease (AD) from Mild Cognitive Impairment (MCI) under resting and cognitive task
+                                    conditions.</p>
+                                <a href="project-details.html?id=alzheimers" class="project-link">View Project <span
+                                        class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Neuro-Signal Software -->
+                    <div class="research-card">
+                        <div class="card-image">
+                            <img src="software.png" alt="Neuro-Signal Analysis Software">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Neuro-Signal Software</h3>
+                                <p class="card-subtitle">Automated Time-Series Analysis</p>
+                            </div>
+                            <div class="card-details">
+                                <p class="card-meta-line">Dr. Chinnakkaruppan Adaikkan • IISc • 2023</p>
+                                <p>Two complementary projects focusing on neural signal processing, and honed
+                                    proficiency in computational neuroscience, statistics and signal processing.</p>
+                                <a href="project-details.html?id=neuro-software" class="project-link">View Project <span
+                                        class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Prosthetics -->
+                    <div class="research-card">
+                        <div class="card-image">
+                            <img src="bci.png" alt="Mind-Controlled Prosthetics">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Mind-Controlled Prosthetics</h3>
+                                <p class="card-subtitle">Motor Imagery BCI System</p>
+                            </div>
+                            <div class="card-details">
+                                <p class="card-meta-line">Dr. Sudheer AP & Asst. Prof. Meby Mathew • NIT Calicut • 2023
+                                </p>
+                                <p>Developed a Deep learning-based EEG motor imaginary signal prediction and classifier
+                                    model for prosthetic limb control.</p>
+                                <a href="project-details.html?id=prosthetics" class="project-link">View Project <span
+                                        class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Security -->
+                    <div class="research-card">
+                        <div class="card-image">
+                            <img src="nn.png" alt="Biometric Security System">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Biometric Security System</h3>
+                                <p class="card-subtitle">Contactless Face Recognition</p>
+                            </div>
+                            <div class="card-details">
+                                <p class="card-meta-line">Dr. Sudhish N George • NIT Calicut • 2022</p>
+                                <p>Developed a robust and contactless face recognition-based security system in view of
+                                    the COVID-19 pandemic in the Embedded Systems Laboratory, NIT Calicut.</p>
+                                <a href="project-details.html?id=security" class="project-link">View Project <span
+                                        class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Cardiac IoT -->
+                    <div class="research-card">
+                        <div class="card-image">
+                            <img src="eeg.png" alt="Cardiac VO2 IoT">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Cardiac VO2 Max IoT</h3>
+                                <p class="card-subtitle">Medical Instrumentation & IoT</p>
+                            </div>
+                            <div class="card-details">
+                                <p class="card-meta-line">Dr. Raghu C V • NIT Calicut • 2022</p>
+                                <p>Co-developed a device for estimating maximum oxygen uptake(VO2 max) of cardiac
+                                    patients.</p>
+                                <a href="project-details.html?id=cardiac-iot" class="project-link">View Project <span
+                                        class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. Swab Manipulator -->
+                    <div class="research-card">
+                        <div class="card-image">
+                            <img src="bci.png" alt="Swab Manipulator">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Swab Collecting Manipulator</h3>
+                                <p class="card-subtitle">Robotics Interest Group (RIG)</p>
+                            </div>
+                            <div class="card-details">
+                                <p class="card-meta-line">RIG Team • NIT Calicut • 2021</p>
+                                <p>Developed a manipulator with a gripper on one end to hold and collect the swab in
+                                    view of Covid-19 pandemic.</p>
+                                <a href="project-details.html?id=swab-manipulator" class="project-link">View Project
+                                    <span class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. RIGGU Robot -->
+                    <div class="research-card">
+                        <div class="card-image">
+                            <img src="nn.png" alt="RIGGU Robot">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>RIGGU - Semi-Humanoid</h3>
+                                <p class="card-subtitle">Biomedical Assistant Robot</p>
+                            </div>
+                            <div class="card-details">
+                                <p class="card-meta-line">RIG Team • NIT Calicut • 2021</p>
+                                <p>RIGGU is a semi-humanoid robot built for biomedical applications to assist and aid
+                                    medical personnel as well as patients.</p>
+                                <a href="project-details.html?id=riggu-robot" class="project-link">View Project <span
+                                        class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software & Open-Source Contributions -->
+        <section id="software">
+            <div class="container reveal">
+                <h2>Software & Open-Source Contributions</h2>
+                <div class="software-grid">
+                    <!-- Left Column: Software Development -->
+                    <div class="software-column">
+                        <div class="column-header">
+                            <svg class="column-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M16 18l2-2-2-2M8 6L6 8l2 2" />
+                                <rect x="2" y="3" width="20" height="18" rx="2" />
+                                <path d="M7 7h.01M12 7h5" />
+                            </svg>
+                            <h3>Software Development</h3>
+                        </div>
+
+                        <!-- NeuroDetect -->
+                        <div class="software-card glass">
+                            <div class="software-header">
+                                <div class="software-icon-wrapper">
+                                    <svg class="software-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                        <path d="M2 17l10 5 10-5" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>BrainDetect</h4>
+                                    <div class="tech-badges">
+                                        <span class="tech-badge eeg">EEG Analysis</span>
+                                        <span class="tech-badge">GUI Application</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="software-description">A standalone computer-based diagnostic software application
+                                designed to automate the analysis of EEG signals for detecting and classifying patients
+                                into Schizophrenia (SZ), Major Depressive Disorder (MDD), and Healthy Controls.</p>
+                            <div class="software-meta">
+                                <span class="software-location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    National Institute of Technology Calicut, India
+                                </span>
+                                <span class="software-status pending">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 6v6l4 2" />
+                                    </svg>
+                                    Issued Indian Patent (Patent No: 571912)
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Feature Analyzer -->
+                        <div class="software-card glass">
+                            <div class="software-header">
+                                <div class="software-icon-wrapper">
+                                    <svg class="software-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M3 3v18h18" />
+                                        <path d="M18 17V9" />
+                                        <path d="M13 17V5" />
+                                        <path d="M8 17v-3" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Feature Analyzer</h4>
+                                    <div class="tech-badges">
+                                        <span class="tech-badge signal">Signal Processing</span>
+                                        <span class="tech-badge">Time-Series</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="software-description">A computer-based software application streamlining the
+                                automated analysis of diverse time-series data, encompassing EEG & LFP signals focusing
+                                on temporal, spectral and spectro-temporal feature extraction algorithms.</p>
+                            <div class="software-meta">
+                                <span class="software-location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    Centre for Brain Research (CBR), IISc
+                                </span>
+                                <span class="software-status pending">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 6v6l4 2" />
+                                    </svg>
+                                    Published in Alzheimer's Research & Therapy
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Open-Source Contributions -->
+                    <div class="opensource-column">
+                        <div class="column-header">
+                            <svg class="column-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 16v-4" />
+                                <path d="M12 8h.01" />
+                                <path d="M8.56 2.75a10 10 0 0 1 12.88 12.88M2.75 15.44a10 10 0 0 1 12.88-12.88" />
+                            </svg>
+                            <h3>Open-Source Contributions</h3>
+                        </div>
+
+                        <div class="opensource-list">
+                            <!-- Contribution 1 -->
+                            <a href="https://www.mathworks.com/matlabcentral/fileexchange/159828-jeffries-matusita-distance"
+                                target="_blank" rel="noopener noreferrer" class="contribution-card glass">
+                                <div class="contribution-header">
+                                    <div class="contribution-icon matlab">
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M22 12l-4-3v2l-4-3-2 3-2-5-4 3v8h16z" />
+                                        </svg>
+                                    </div>
+                                    <div class="contribution-meta">
+                                        <span class="contribution-year">2024</span>
+                                        <span class="contribution-platform">MATLAB Central</span>
+                                    </div>
+                                </div>
+                                <h5>Jeffries-Matusita Distance</h5>
+                                <p>Statistical distance measure implementation for feature selection and classification
+                                    tasks</p>
+                                <div class="contribution-link-indicator">
+                                    <span>View on MATLAB Central</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                        <path d="M15 3h6v6" />
+                                        <path d="M10 14L21 3" />
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <!-- Contribution 2 -->
+                            <a href="https://www.mathworks.com/matlabcentral/fileexchange/133777-corrected-un-damped-autocorrelation-function-acf"
+                                target="_blank" rel="noopener noreferrer" class="contribution-card glass">
+                                <div class="contribution-header">
+                                    <div class="contribution-icon matlab">
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M22 12l-4-3v2l-4-3-2 3-2-5-4 3v8h16z" />
+                                        </svg>
+                                    </div>
+                                    <div class="contribution-meta">
+                                        <span class="contribution-year">2023</span>
+                                        <span class="contribution-platform">MATLAB Central</span>
+                                    </div>
+                                </div>
+                                <h5>Corrected (Un-Damped) Autocorrelation Function (ACF)</h5>
+                                <p>Enhanced autocorrelation function implementation for time-series analysis</p>
+                                <div class="contribution-link-indicator">
+                                    <span>View on MATLAB Central</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                        <path d="M15 3h6v6" />
+                                        <path d="M10 14L21 3" />
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <!-- Contribution 3 -->
+                            <a href="https://www.mathworks.com/matlabcentral/fileexchange/134032-normal-distribution-analyser"
+                                target="_blank" rel="noopener noreferrer" class="contribution-card glass">
+                                <div class="contribution-header">
+                                    <div class="contribution-icon matlab">
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M22 12l-4-3v2l-4-3-2 3-2-5-4 3v8h16z" />
+                                        </svg>
+                                    </div>
+                                    <div class="contribution-meta">
+                                        <span class="contribution-year">2023</span>
+                                        <span class="contribution-platform">MATLAB Central</span>
+                                    </div>
+                                </div>
+                                <h5>Normal Distribution Analyser</h5>
+                                <p>Comprehensive tool for analyzing and visualizing normal distributions in datasets</p>
+                                <div class="contribution-link-indicator">
+                                    <span>View on MATLAB Central</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                        <path d="M15 3h6v6" />
+                                        <path d="M10 14L21 3" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Academic Outreach Experience -->
+        <section id="leadership">
+            <div class="container reveal">
+                <h2>Leadership & Academic Outreach</h2>
+                <div class="leadership-timeline">
+                    <!-- Item 1: Program and Project Lead -->
+                    <div class="leadership-item glass">
+                        <div class="leadership-icon-wrapper lead">
+                            <svg class="leadership-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <div class="leadership-content">
+                            <div class="leadership-header">
+                                <div>
+                                    <div class="role-badge lead">Program & Project Lead</div>
+                                    <h4>Robotics Interest Group (RIG)</h4>
+                                    <p class="leadership-institution">National Institute of Technology Calicut (NIT
+                                        Calicut)</p>
+                                </div>
+                                <span class="leadership-date">Feb 2023 - Feb 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Electrical Section Team Lead -->
+                    <div class="leadership-item glass">
+                        <div class="leadership-icon-wrapper team">
+                            <svg class="leadership-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+                                <circle cx="16" cy="11" r="3" />
+                                <path d="M22 21v-1a3 3 0 0 0-3-3h-1" />
+                            </svg>
+                        </div>
+                        <div class="leadership-content">
+                            <div class="leadership-header">
+                                <div>
+                                    <div class="role-badge team">Electrical Section Team Lead</div>
+                                    <h4>ABU-Robocon 2023, Asia-Pacific Robot Contest, New Delhi</h4>
+                                    <p class="leadership-institution">NIT Calicut Team</p>
+                                </div>
+                                <span class="leadership-date">Dec 2022 - May 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Control System Workshop Lead -->
+                    <div class="leadership-item glass">
+                        <div class="leadership-icon-wrapper workshop">
+                            <svg class="leadership-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M9 3v18" />
+                                <path d="M14 8l3 3-3 3" />
+                            </svg>
+                        </div>
+                        <div class="leadership-content">
+                            <div class="leadership-header">
+                                <div>
+                                    <div class="role-badge workshop">Control System Workshop Lead</div>
+                                    <h4>Tathva'22 Workshop</h4>
+                                    <p class="leadership-institution">Robotics Interest Group (RIG), NIT Calicut</p>
+                                </div>
+                                <span class="leadership-date">October 2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: ECED Website Content Manager -->
+                    <div class="leadership-item glass">
+                        <div class="leadership-icon-wrapper content">
+                            <svg class="leadership-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                                <line x1="10" y1="9" x2="8" y2="9" />
+                            </svg>
+                        </div>
+                        <div class="leadership-content">
+                            <div class="leadership-header">
+                                <div>
+                                    <div class="role-badge content">ECED Website Content Manager</div>
+                                    <h4>Electronics & Communication Engineering Department</h4>
+                                    <p class="leadership-institution">National Institute of Technology Calicut</p>
+                                </div>
+                                <span class="leadership-date">August 2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Student Technical Member -->
+                    <div class="leadership-item glass">
+                        <div class="leadership-icon-wrapper member">
+                            <svg class="leadership-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <div class="leadership-content">
+                            <div class="leadership-header">
+                                <div>
+                                    <div class="role-badge member">Student Technical Member</div>
+                                    <h4>Robotics Interest Group (RIG)</h4>
+                                    <p class="leadership-institution">National Institute of Technology Calicut</p>
+                                </div>
+                                <span class="leadership-date">June 2021 - February 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: NSS Student Member -->
+                    <div class="leadership-item glass">
+                        <div class="leadership-icon-wrapper nss">
+                            <svg class="leadership-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </div>
+                        <div class="leadership-content">
+                            <div class="leadership-header">
+                                <div>
+                                    <div class="role-badge nss">National Service Scheme (NSS) Student Member</div>
+                                    <h4>Government of India</h4>
+                                    <p class="leadership-institution">St John's Model HSS, Kerala</p>
+                                </div>
+                                <span class="leadership-date">May 2018 - May 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Teaching Experience -->
+        <section id="teaching">
+            <div class="container reveal">
+                <h2>Academic Teaching Experience</h2>
+                <div class="teaching-grid">
+                    <!-- Event 1: IEEE Guest Speaker - Federal Institute -->
+                    <div class="teaching-card glass">
+                        <div class="teaching-header">
+                            <div class="ieee-badge">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                    <path d="M2 17l10 5 10-5" />
+                                </svg>
+                                <span>IEEE SPS</span>
+                            </div>
+                            <span class="teaching-date">September 28, 2024</span>
+                        </div>
+                        <h4>IEEE Guest Speaker</h4>
+                        <p class="teaching-venue">Federal Institute of Science and Technology</p>
+                        <p class="teaching-chapter">IEEE Signal Processing Society (SPS), Kerala Chapter</p>
+                    </div>
+
+                    <!-- Event 2: IEEE Guest Speaker - Mar Athanasius -->
+                    <div class="teaching-card glass">
+                        <div class="teaching-header">
+                            <div class="ieee-badge">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                    <path d="M2 17l10 5 10-5" />
+                                </svg>
+                                <span>IEEE SPS</span>
+                            </div>
+                            <span class="teaching-date">April 14, 2024</span>
+                        </div>
+                        <h4>IEEE Guest Speaker</h4>
+                        <p class="teaching-venue">Mar Athanasius College of Engineering</p>
+                        <p class="teaching-chapter">IEEE Signal Processing Society (SPS), Kerala Chapter</p>
+                    </div>
+
+                    <!-- Event 3: Student Lecturer - SANKETH'23 -->
+                    <div class="teaching-card glass">
+                        <div class="teaching-header">
+                            <div class="workshop-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg>
+                                <span>Workshop</span>
+                            </div>
+                            <span class="teaching-date">April 2023</span>
+                        </div>
+                        <h4>Student Lecturer, SANKETH'23 Workshop</h4>
+                        <p class="teaching-venue">NIT Calicut</p>
+                        <p class="teaching-topic">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                            </svg>
+                            Introduction to Machine Learning and Deep Learning
+                        </p>
+                    </div>
+
+                    <!-- Event 4: Student Lecturer - ORIGO'22 -->
+                    <div class="teaching-card glass">
+                        <div class="teaching-header">
+                            <div class="workshop-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg>
+                                <span>Workshop</span>
+                            </div>
+                            <span class="teaching-date">June 2022</span>
+                        </div>
+                        <h4>Student Lecturer, ORIGO'22 Workshop</h4>
+                        <p class="teaching-venue">NIT Calicut</p>
+                        <p class="teaching-topic">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                            </svg>
+                            Introduction to Robotics
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Honors & Awards -->
+        <section id="honors">
+            <div class="container reveal">
+                <h2>Honors & Awards</h2>
+
+                <!-- Featured Spotlight Award -->
+                <div class="spotlight-award glass">
+                    <div class="spotlight-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7" />
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                        </svg>
+                        <span>Currently Active</span>
+                    </div>
+                    <div class="spotlight-content">
+                        <div class="spotlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="spotlight-details">
+                            <h3>Joint Direct Ph.D. Offer in Brain-Computer Interface Domain</h3>
+                            <div class="spotlight-institutions">
+                                <span class="institution-badge">KK Women's and Children's Hospital (KKH)</span>
+                                <span class="institution-connector">&</span>
+                                <span class="institution-badge">Singapore Institute of Technology (SIT)</span>
+                            </div>
+                            <div class="spotlight-location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                Singapore
+                            </div>
+                        </div>
+                        <div class="spotlight-timeline">
+                            <span>April 2024 - Present</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Awards Grid -->
+                <div class="awards-grid">
+                    <!-- Award 1: Best Research Poster -->
+                    <div class="award-card glass academic">
+                        <div class="award-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7" />
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                            </svg>
+                        </div>
+                        <div class="award-category">Academic Excellence</div>
+                        <h4>Best Research Poster Award</h4>
+                        <p class="award-event">CBR Poster Symposium-2023</p>
+                        <p class="award-institution">Centre for Brain Research (CBR), Indian Institute of Science
+                            (IISc), Bangalore</p>
+                        <div class="award-achievement">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <span>First Prize</span>
+                        </div>
+                        <div class="award-details">
+                            <p>Research poster: "Computing and Controlling the Brain Waves"</p>
+                        </div>
+                        <div class="award-date">July 2023</div>
+                    </div>
+
+                    <!-- Award 2: CBRAIN -->
+                    <div class="award-card glass academic">
+                        <div class="award-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <div class="award-category">Research Excellence</div>
+                        <h4>Award of CBR Research and Innovation (CBRAIN)</h4>
+                        <p class="award-institution">Centre for Brain Research (CBR), Indian Institute of Science
+                            (IISc), Bangalore</p>
+                        <div class="award-achievement">
+                            <div class="achievement-stat">
+                                <span class="stat-number">20</span>
+                                <span class="stat-label">Selected Nationally</span>
+                            </div>
+                            <div class="achievement-divider">of</div>
+                            <div class="achievement-stat">
+                                <span class="stat-number">4,650</span>
+                                <span class="stat-label">Applicants</span>
+                            </div>
+                        </div>
+                        <div class="award-date">May 2023 - August 2023</div>
+                    </div>
+
+                    <!-- Award 3: ABU-ROBOCON -->
+                    <div class="award-card glass competition">
+                        <div class="award-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <rect x="9" y="9" width="6" height="6" />
+                                <line x1="9" y1="1" x2="9" y2="4" />
+                                <line x1="15" y1="1" x2="15" y2="4" />
+                                <line x1="9" y1="20" x2="9" y2="23" />
+                                <line x1="15" y1="20" x2="15" y2="23" />
+                                <line x1="20" y1="9" x2="23" y2="9" />
+                                <line x1="20" y1="14" x2="23" y2="14" />
+                                <line x1="1" y1="9" x2="4" y2="9" />
+                                <line x1="1" y1="14" x2="4" y2="14" />
+                            </svg>
+                        </div>
+                        <div class="award-category">Competition Victory</div>
+                        <h4>ABU-ROBOCON 2023</h4>
+                        <p class="award-event">Asia-Pacific Robot Contest, New Delhi</p>
+                        <p class="award-institution">Indian Institute of Technology Delhi (IIT Delhi)</p>
+                        <div class="award-achievement">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                            <span>National Round Excellence</span>
+                        </div>
+                        <div class="award-details">
+                            <p>Team from RIG, NIT Calicut outshined all prestigious IITs and NITs • Electrical Section
+                                Team Lead</p>
+                        </div>
+                        <div class="award-date">December 2022 - May 2023</div>
+                    </div>
+
+                    <!-- Award 4: CSS Scholarship -->
+                    <div class="award-card glass government">
+                        <div class="award-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                            </svg>
+                        </div>
+                        <div class="award-category">Government Recognition</div>
+                        <h4>National-level Centre Sector Scholarship (CSS)</h4>
+                        <p class="award-institution">Government of India</p>
+                        <div class="award-achievement">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <span>Meritorious Student (>96% HSE)</span>
+                        </div>
+                        <div class="award-details">
+                            <p>National-level scholarship for students with marks above 96% in Higher Secondary
+                                Education</p>
+                        </div>
+                        <div class="award-date">December 2020 - Present</div>
+                    </div>
+
+                    <!-- Award 5: TOYCATHON -->
+                    <div class="award-card glass competition">
+                        <div class="award-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polygon points="10 8 16 12 10 16 10 8" />
+                            </svg>
+                        </div>
+                        <div class="award-category">National Competition</div>
+                        <h4>TOYCATHON 2021</h4>
+                        <p class="award-event">'AatmaNirbhar Bharat Abhiyan'</p>
+                        <p class="award-institution">Government of India</p>
+                        <div class="award-achievement">
+                            <div class="achievement-stat">
+                                <span class="stat-label">Grand Finale</span>
+                                <span class="stat-number">133,113</span>
+                                <span class="stat-label">Participants</span>
+                            </div>
+                        </div>
+                        <div class="award-details">
+                            <p>Team "Time Benders" • Developed educational smartphone game about Indian History through
+                                interactive gameplay</p>
+                        </div>
+                        <div class="award-date">May 2021</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+
+
+
+                <!-- Contact -->
+                <section id="contact">
+                    <div class="contact-premium-wrapper">
+                        <div class="contact-background-effects">
+                            <div class="gradient-orb orb-1"></div>
+                            <div class="gradient-orb orb-2"></div>
+                            <div class="neural-grid"></div>
+                        </div>
+
+                        <div class="contact-content-card glass-premium">
+                            <div class="contact-icon-header">
+                                <svg class="connection-animation" viewBox="0 0 100 50">
+                                    <circle cx="20" cy="25" r="6" class="pulse-node">
+                                        <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite" />
+                                    </circle>
+                                    <circle cx="50" cy="25" r="8" class="pulse-node-center">
+                                        <animate attributeName="r" values="8;10;8" dur="1.5s"
+                                            repeatCount="indefinite" />
+                                    </circle>
+                                    <circle cx="80" cy="25" r="6" class="pulse-node">
+                                        <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite"
+                                            begin="0.5s" />
+                                    </circle>
+                                    <line x1="26" y1="25" x2="44" y2="25" class="connection-line" />
+                                    <line x1="56" y1="25" x2="74" y2="25" class="connection-line" />
+                                </svg>
+                            </div>
+
+                            <h2 class="contact-premium-title">Let's Connect</h2>
+
+                            <div class="tech-divider-premium">
+                                <span class="divider-bar"></span>
+                                <span class="divider-glow"></span>
+                                <span class="divider-bar"></span>
+                            </div>
+
+                            <p class="contact-premium-subtitle">Interested in collaboration or discussing BCI
+                                technology?</p>
+
+                            <div class="contact-button-group">
+                                <a href="mailto:contact@example.com" class="btn-contact-premium primary-beam">
+                                    <span class="btn-beam-bg"></span>
+                                    <span class="btn-beam-content">
+                                        <svg class="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2">
+                                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                                            <path d="m2 7 10 7 10-7" />
+                                        </svg>
+                                        Send Email
+                                        <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2">
+                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                        </svg>
+                                    </span>
+                                </a>
+
+                                <a href="https://scholar.google.com/citations?user=4EihBncAAAAJ&hl=en" target="_blank"
+                                    class="btn-contact-premium secondary-beam">
+                                    <span class="btn-beam-bg"></span>
+                                    <span class="btn-beam-content">
+                                        <svg class="icon-profile" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                            <circle cx="12" cy="7" r="4" />
+                                        </svg>
+                                        View Profile
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        // Helper: Title Case
+                        const toTitleCase = (str) => {
+                            if (!str) return '';
+                            return str.replace(
+                                /\w\S*/g,
+                                (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+                            );
+                        };
+
+                        fetch('publications.json')
+                            .then(response => response.json())
+                            .then(data => {
+                                const grid = document.getElementById('pub-grid');
+                                grid.innerHTML = ''; // Clear loading state
+
+                                data.forEach((pub, index) => {
+                                    const card = document.createElement('div');
+                                    card.className = `pub-card reveal delay-${index % 3 + 1}`;
+
+                                    let badgeClass = 'badge-conf';
+                                    if (pub.type && pub.type.includes('Journal')) badgeClass = 'badge-journal';
+                                    if (pub.type && pub.type.includes('Patent')) badgeClass = 'badge-patent';
+
+                                    // Fix layout: inline SVG for venue icon
+                                    const bookIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="venue-icon-svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 1-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>`;
+
+                                    // Format Title (fix ALL CAPS if majority of chars are uppercase)
+                                    let displayTitle = pub.title;
+                                    const upperCount = (displayTitle.match(/[A-Z]/g) || []).length;
+                                    if (upperCount > displayTitle.length * 0.5) {
+                                        displayTitle = toTitleCase(displayTitle);
+                                    }
+
+                                    card.innerHTML = `
+                                        <div class="pub-card-inner">
+                                            <div class="pub-header">
+                                                <div class="badge-group">
+                                                    <div class="pub-type ${badgeClass}">${pub.type}</div>
+                                                </div>
+                                                <div class="pub-year">${pub.year}</div>
+                                            </div>
+                                            
+                                            <h3 class="pub-title">
+                                                <a href="${pub.link}" target="_blank">
+                                                    ${displayTitle}
+                                                </a>
+                                            </h3>
+                                            
+                                            <div class="pub-authors">${pub.authors}</div>
+                                            
+                                            <div class="pub-footer">
+                                                <div class="pub-venue">
+                                                    ${bookIcon} <span>${pub.venue}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
+                                    grid.appendChild(card);
+                                });
+
+                                setTimeout(() => {
+                                    document.querySelectorAll('.pub-card').forEach(el => el.classList.add('active'));
+                                }, 500);
+                            })
+                            .catch(err => console.error('Error loading publications:', err));
+                    });
+                </script>
+
+                <footer>
+                    <p>&copy; 2025 Aswin Sekhar C S. All rights reserved.</p>
+                </footer>
+
+    </main>
+
+    <!-- Automated Tests -->
+    <script src="test_suite.js" defer></script>
+
+    <!-- Main Logic -->
+    <script type="module" src="main.js?v=2"></script>
+</body>
+
+</html>

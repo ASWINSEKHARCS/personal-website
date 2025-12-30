@@ -1,0 +1,453 @@
+/* ===================================
+   Leadership & Academic Outreach
+   =================================== */
+
+#leadership {
+    background: linear-gradient(135deg, rgba(0, 243, 255, 0.02), rgba(189, 0, 255, 0.02));
+}
+
+#leadership h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.leadership-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.leadership-item {
+    padding: 2rem;
+    border-radius: 16px;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.leadership-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(180deg, #00f3ff, #bd00ff);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.leadership-item:hover::before {
+    opacity: 1;
+}
+
+.leadership-item:hover {
+    transform: translateX(8px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(0, 243, 255, 0.3);
+    box-shadow: 0 12px 32px rgba(0, 243, 255, 0.12);
+}
+
+.leadership-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.leadership-icon-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.leadership-item:hover .leadership-icon-wrapper::before {
+    opacity: 1;
+}
+
+.leadership-icon-wrapper.lead {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.1));
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.leadership-icon-wrapper.team {
+    background: linear-gradient(135deg, rgba(0, 243, 255, 0.2), rgba(0, 168, 255, 0.1));
+    border: 1px solid rgba(0, 243, 255, 0.3);
+}
+
+.leadership-icon-wrapper.workshop {
+    background: linear-gradient(135deg, rgba(189, 0, 255, 0.2), rgba(138, 0, 255, 0.1));
+    border: 1px solid rgba(189, 0, 255, 0.3);
+}
+
+.leadership-icon-wrapper.content {
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.2), rgba(0, 200, 100, 0.1));
+    border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.leadership-icon-wrapper.member {
+    background: linear-gradient(135deg, rgba(100, 149, 237, 0.2), rgba(65, 105, 225, 0.1));
+    border: 1px solid rgba(100, 149, 237, 0.3);
+}
+
+.leadership-icon-wrapper.nss {
+    background: linear-gradient(135deg, rgba(255, 99, 132, 0.2), rgba(255, 64, 105, 0.1));
+    border: 1px solid rgba(255, 99, 132, 0.3);
+}
+
+.leadership-item:hover .leadership-icon-wrapper {
+    transform: rotate(-5deg) scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 243, 255, 0.3);
+}
+
+.leadership-icon {
+    width: 28px;
+    height: 28px;
+    stroke-width: 2;
+}
+
+.leadership-icon-wrapper.lead .leadership-icon {
+    stroke: #ffd700;
+}
+
+.leadership-icon-wrapper.team .leadership-icon {
+    stroke: #00f3ff;
+}
+
+.leadership-icon-wrapper.workshop .leadership-icon {
+    stroke: #bd00ff;
+}
+
+.leadership-icon-wrapper.content .leadership-icon {
+    stroke: #00ff88;
+}
+
+.leadership-icon-wrapper.member .leadership-icon {
+    stroke: #6495ed;
+}
+
+.leadership-icon-wrapper.nss .leadership-icon {
+    stroke: #ff6384;
+}
+
+.leadership-content {
+    flex: 1;
+}
+
+.leadership-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.role-badge {
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.role-badge.lead {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.05));
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    color: #ffd700;
+}
+
+.role-badge.team {
+    background: linear-gradient(135deg, rgba(0, 243, 255, 0.2), rgba(0, 243, 255, 0.05));
+    border: 1px solid rgba(0, 243, 255, 0.4);
+    color: #00f3ff;
+}
+
+.role-badge.workshop {
+    background: linear-gradient(135deg, rgba(189, 0, 255, 0.2), rgba(189, 0, 255, 0.05));
+    border: 1px solid rgba(189, 0, 255, 0.4);
+    color: #bd00ff;
+}
+
+.role-badge.content {
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.2), rgba(0, 255, 136, 0.05));
+    border: 1px solid rgba(0, 255, 136, 0.4);
+    color: #00ff88;
+}
+
+.role-badge.member {
+    background: linear-gradient(135deg, rgba(100, 149, 237, 0.2), rgba(100, 149, 237, 0.05));
+    border: 1px solid rgba(100, 149, 237, 0.4);
+    color: #6495ed;
+}
+
+.role-badge.nss {
+    background: linear-gradient(135deg, rgba(255, 99, 132, 0.2), rgba(255, 99, 132, 0.05));
+    border: 1px solid rgba(255, 99, 132, 0.4);
+    color: #ff6384;
+}
+
+.leadership-header h4 {
+    font-size: 1.3rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.leadership-institution {
+    font-size: 0.85rem;
+    color: #a0a0b0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+.leadership-date {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #00f3ff;
+    white-space: nowrap;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    background: rgba(0, 243, 255, 0.08);
+    border: 1px solid rgba(0, 243, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.leadership-item:hover .leadership-date {
+    background: rgba(0, 243, 255, 0.15);
+    border-color: rgba(0, 243, 255, 0.4);
+    box-shadow: 0 2px 8px rgba(0, 243, 255, 0.2);
+}
+
+/* ===================================
+   Academic Teaching Experience
+   =================================== */
+
+#teaching {
+    background: linear-gradient(135deg, rgba(189, 0, 255, 0.02), rgba(0, 243, 255, 0.02));
+}
+
+#teaching h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #bd00ff, #00f3ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.teaching-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.teaching-card {
+    padding: 2rem;
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.teaching-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #005BAC, #0073CF);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.teaching-card:hover::before {
+    opacity: 1;
+}
+
+.teaching-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(0, 115, 207, 0.3);
+    box-shadow: 0 16px 36px rgba(0, 115, 207, 0.15);
+}
+
+.teaching-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.ieee-badge,
+.workshop-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.ieee-badge {
+    background: linear-gradient(135deg, rgba(0, 91, 172, 0.2), rgba(0, 115, 207, 0.1));
+    border: 1px solid rgba(0, 115, 207, 0.4);
+    color: #0073CF;
+}
+
+.ieee-badge svg {
+    width: 16px;
+    height: 16px;
+    fill: #0073CF;
+}
+
+.workshop-badge {
+    background: linear-gradient(135deg, rgba(255, 165, 0, 0.2), rgba(255, 140, 0, 0.1));
+    border: 1px solid rgba(255, 165, 0, 0.4);
+    color: #ffa500;
+}
+
+.workshop-badge svg {
+    width: 16px;
+    height: 16px;
+    stroke: #ffa500;
+}
+
+.teaching-date {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #a0a0b0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.teaching-card h4 {
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.teaching-venue {
+    font-size: 0.95rem;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.teaching-chapter {
+    font-size: 0.8rem;
+    color: #a0a0b0;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+.teaching-topic {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    color: #a0a0b0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border-left: 2px solid rgba(0, 243, 255, 0.3);
+    margin-top: 0.5rem;
+}
+
+.teaching-topic svg {
+    width: 18px;
+    height: 18px;
+    stroke: #00f3ff;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.teaching-card:hover .ieee-badge {
+    background: linear-gradient(135deg, rgba(0, 91, 172, 0.3), rgba(0, 115, 207, 0.15));
+    border-color: rgba(0, 115, 207, 0.6);
+    box-shadow: 0 2px 8px rgba(0, 115, 207, 0.2);
+}
+
+.teaching-card:hover .workshop-badge {
+    background: linear-gradient(135deg, rgba(255, 165, 0, 0.3), rgba(255, 140, 0, 0.15));
+    border-color: rgba(255, 165, 0, 0.6);
+    box-shadow: 0 2px 8px rgba(255, 165, 0, 0.2);
+}
+
+/* Responsive Design for Leadership & Teaching */
+@media (max-width: 1024px) {
+    .teaching-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .leadership-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .leadership-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .leadership-date {
+        align-self: flex-start;
+    }
+
+    .teaching-card {
+        padding: 1.5rem;
+    }
+
+    .teaching-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+}

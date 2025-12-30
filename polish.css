@@ -1,0 +1,217 @@
+/* ===================================
+   Global Premium Polish & Responsiveness
+   =================================== */
+
+:root {
+    --premium-glass: rgba(255, 255, 255, 0.03);
+    --premium-border: rgba(255, 255, 255, 0.08);
+    --premium-blur: blur(20px);
+    --accent-glow: 0 0 20px rgba(0, 243, 255, 0.2);
+}
+
+/* 1. Responsive Typography Fixes */
+h2.section-title {
+    font-size: clamp(2.2rem, 8vw, 3.5rem) !important;
+    text-align: center;
+    margin-bottom: 5rem !important;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 800;
+    color: #fff;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+h2.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+    border-radius: 2px;
+}
+
+/* 2. Global Container Refinement */
+section {
+    padding: 100px 5%;
+    scroll-margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 80px 20px;
+    }
+}
+
+/* 3. Dashboard/Grid Polishing */
+.dashboard-grid,
+.skills-matrix,
+.neural-matrix,
+.publications-grid,
+.awards-grid {
+    grid-gap: 2.5rem !important;
+}
+
+@media (max-width: 1200px) {
+
+    .dashboard-grid,
+    .skills-matrix {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .education-grid,
+    .stats-visual-grid,
+    .teaching-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* 4. Unified Glassmorphism & Premium Borders */
+.glass,
+.skill-cluster,
+.dashboard-card,
+.education-node,
+.contribution-card,
+.award-card,
+.pub-card,
+.leadership-item,
+.teaching-card {
+    background: var(--premium-glass) !important;
+    backdrop-filter: var(--premium-blur) !important;
+    -webkit-backdrop-filter: var(--premium-blur) !important;
+    border: 1px solid var(--premium-border) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.glass:hover,
+.skill-cluster:hover,
+.dashboard-card:hover,
+.education-node:hover,
+.contribution-card:hover,
+.award-card:hover,
+.pub-card:hover,
+.leadership-item:hover,
+.teaching-card:hover {
+    border-color: rgba(0, 243, 255, 0.3) !important;
+    box-shadow: 0 20px 50px rgba(0, 243, 255, 0.1) !important;
+    transform: translateY(-8px) !important;
+}
+
+/* 5. Mobile Component Refinements */
+@media (max-width: 768px) {
+    .hero-container {
+        padding-top: 60px !important;
+        gap: 3rem !important;
+    }
+
+    .hero-content h1 {
+        margin-bottom: 2rem;
+    }
+
+    .node-network,
+    .hardware-stats,
+    .hw-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Education Featured Card Fixes */
+    .education-node.featured {
+        padding: 2rem !important;
+    }
+
+    .education-node.featured .node-main {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 2rem !important;
+    }
+
+    .education-node.featured .node-info {
+        margin: 0 !important;
+    }
+
+    .education-node.featured .node-meta {
+        flex-direction: row !important;
+        justify-content: center !important;
+        width: 100% !important;
+        flex-wrap: wrap !important;
+    }
+
+    .node-badge {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        margin: 0 auto 1.5rem auto !important;
+        display: inline-block !important;
+    }
+
+    /* Skills Clusters */
+    .skill-cluster.focus {
+        grid-column: span 12 !important;
+    }
+
+    .cluster-header {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 1rem !important;
+    }
+
+    .cluster-id {
+        position: relative !important;
+        top: 0 !important;
+        right: 0 !important;
+        margin-bottom: 1rem !important;
+        text-align: center !important;
+        display: block !important;
+    }
+}
+
+/* 6. Section Specific Polish */
+
+.pub-card {
+    padding: 2rem !important;
+}
+
+.pub-title {
+    text-transform: capitalize !important;
+    font-size: 1.15rem !important;
+    color: #fff !important;
+}
+
+.leadership-institution,
+.award-institution {
+    color: var(--text-secondary) !important;
+}
+
+.card-tag {
+    letter-spacing: 2px !important;
+}
+
+/* 7. Final Polish Animations */
+.reveal {
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Particle Background Dimming for Readability */
+#brain-canvas {
+    opacity: 0.6 !important;
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050510;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--accent-cyan), var(--accent-purple));
+    border-radius: 10px;
+}
